@@ -47,3 +47,29 @@ header{
   outline: none;
   font-size: 16px;
 }
+
+
+.taskBox{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 17px 0;
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px rgba(75,75,75);
+
+}
+
+.taskText{
+  margin-left: 12px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.taskTrashButton{
+  margin-right: 8px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}

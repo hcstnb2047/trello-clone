@@ -1,12 +1,13 @@
 import React from "react";
-
-export const Tasks = () => {
+import { Task } from "./input/task";
+export const Tasks = ({ taskList ,setTaskList}) => {
   return (
     <div className="tasks">
-      <ul>
-        <li>タスク1</li>
-        <li>タスク2</li>
-      </ul>
+      {taskList.map((task, index) => (
+        <div key={index}>
+          <Task key={task.id} task={task} tasklist={taskList} setTaskList={setTaskList}/>
+        </div>
+      ))}
     </div>
   );
-}; 
+};

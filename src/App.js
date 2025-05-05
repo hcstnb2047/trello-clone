@@ -1,5 +1,5 @@
 import { Header } from "./components/header/Header"; 
-import { TaskCardList } from "./components/task/TaskCardList"; 
+import TaskCardList from "./components/task/TaskCardList"; 
 import "./index.css";
 
 function App() {
