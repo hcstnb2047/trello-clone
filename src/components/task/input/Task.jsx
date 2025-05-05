@@ -10,7 +10,7 @@ export const Task = ({ task, taskList, setTaskList, index }) => {
   };
 
   return (
-    <Draggable draggableId={task.id.toString()} index={index}>
+    <Draggable draggableId={task.draggableId} index={index}>
       {(provided) => (
         <div
           className="taskBox"
