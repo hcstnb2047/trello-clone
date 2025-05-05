@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { TaskCardTitle } from "./TaskCardTitle";
 import { TaskCardDeleteButton } from "./TaskCardDeleteButton";
-import { TaskAddInput } from "./TaskAddInput";
+import { TaskAddInput } from "./input/TaskAddInput";
 import { Tasks } from "./Tasks";
 
 export const TaskCard = () => {

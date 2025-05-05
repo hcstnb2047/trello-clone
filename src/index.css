@@ -35,12 +35,13 @@ header{
 
 .taskCardTitleInputArea{
   margin-bottom: 10px;
-  width: 30px;
+  width: 100%;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .taskCardTitleInput{
-  width: 80px;
+  width: 100%;
   padding: 4px 8px;
   border-radius: 3px;
   border: none;
@@ -48,6 +49,14 @@ header{
   font-size: 16px;
 }
 
+.taskAddInput {
+  width: 100%;
+  font-size: 1.3rem;
+  padding: 10px 15px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+}
 
 .taskBox{
   display: flex;
