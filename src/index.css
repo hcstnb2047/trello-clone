@@ -1,46 +1,47 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-h1{
+h1 {
   font-size: 45pxm;
   color: aliceblue;
   font-weight: 600;
   text-shadow: 2px 2px 2px black;
 }
 
-header{
+header {
   text-align: center;
   padding: 4px 10%;
   background-color: rgb(102, 94, 74);
 }
 
-.app{
+.app {
   background: url(./images/mountain.jpg);
+  /* background-color: #000; */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
 }
 
-.taskCard{
-  background-color: rgb(228,228,228);
+.taskCard {
+  background-color: rgb(228, 228, 228);
   width: 250px;
   border-radius: 5px;
   padding: 10px 25px;
   margin: 10px 1%;
 }
 
-.taskCardTitleInputArea{
+.taskCardTitleInputArea {
   margin-bottom: 10px;
   width: 100%;
   cursor: pointer;
   white-space: nowrap;
 }
 
-.taskCardTitleInput{
+.taskCardTitleInput {
   width: 100%;
   padding: 4px 8px;
   border-radius: 3px;
@@ -58,7 +59,7 @@ header{
   outline: none;
 }
 
-.taskBox{
+.taskBox {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -66,19 +67,45 @@ header{
   margin-top: 10px;
   background-color: white;
   border-radius: 5px;
-  box-shadow: 1px 1px 1px rgba(75,75,75);
+  box-shadow: 1px 1px 1px rgba(75, 75, 75);
 
 }
 
-.taskText{
+.taskText {
   margin-left: 12px;
   font-size: 16px;
   font-weight: 500;
 }
 
-.taskTrashButton{
+.taskTrashButton {
   margin-right: 8px;
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+.addTaskCardButtonArea {
+  margin-left: 1px;
+  margin-top: 25px;
+}
+
+.addTaskCardButton {
+  padding: 10px 20px;
+  border-radius: 9999px;
+  font-size: 30px;
+  background-color: rgb(221,194, 162);
+  box-shadow: 3px 3px 8px black;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.addTaskCardButton:hover {
+  box-shadow: none;
+  transform: translate(3px, 3px);
+}
+.taskCardsArea {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
 }
