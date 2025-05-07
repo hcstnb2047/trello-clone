@@ -5,7 +5,7 @@ import { TaskAddInput } from "./input/TaskAddInput";
 import { Tasks } from "./Tasks";
 import { v4 as uuidv4 } from "uuid";
 
-export const TaskCard = () => {
+export const TaskCard = ({taskCard, taskCardsList, setTaskCardsList}) => {
   const [inputText, setInputText] = useState("");
   const [taskList, setTaskList] = useState([]);
   // 各TaskCardに一意のIDを割り当てる
@@ -13,8 +13,10 @@ export const TaskCard = () => {
 
   return (
     <div className="taskCard">
-      <TaskCardTitle />
-      <TaskCardDeleteButton />
+      <div className="taskCardTitleAndTaskCardDeleteButtonArea">
+        <TaskCardTitle />
+        <TaskCardDeleteButton taskCardId={taskCard.id} taskCardsList={taskCardsList} setTaskCardsList={setTaskCardsList} />
+      </div>
       <TaskAddInput
         inputText={inputText}
         setInputText={setInputText}
