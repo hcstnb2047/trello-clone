@@ -3,9 +3,9 @@ import { v4 as uuidv4 } from 'uuid';
 
 const AddTaskCardButton = ({ taskCardsList, setTaskCardsList }) => {
   const addTaskCardList = () => {
-    const taskCardId = uuidv4();
+    const taskCardId = taskCardsList.length;
     setTaskCardsList([...taskCardsList, { 
-      id:  taskCardId, 
+      id: taskCardId, 
       draggableId: `item-${taskCardId}`,
       title: 'New Task Card', 
       description: 'New Task Card Description', 

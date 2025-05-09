@@ -4,7 +4,7 @@ import { DragDropContext, Droppable } from "react-beautiful-dnd";
 
 export const Tasks = ({ taskCardId, taskList, setTaskList }) => {
   const handleDragEnd = (result) => {
-    console.log("handleDragEnd");
+    // console.log("handleDragEnd");
     // result.destination がない場合は処理を中断
     if (!result.destination) return;
     
@@ -16,12 +16,12 @@ export const Tasks = ({ taskCardId, taskList, setTaskList }) => {
   };
 
   // ドロップ可能な領域のIDを生成
-  // const droppableId = `taskList-${taskCardId}`;
+  const droppableId = `taskList-${taskCardId}`;
 
   return (
     <div className="tasks">
       <DragDropContext onDragEnd={handleDragEnd}>
-        <Droppable droppableId="droppableId" type="TASK">
+        <Droppable droppableId={droppableId} type="TASK">
           {(provided) => (
             <div 
               ref={provided.innerRef} 
